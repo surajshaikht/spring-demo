@@ -30,8 +30,8 @@ jobs:
     - name: Build with Maven
       run: mvn clean install
     - uses: mr-smithers-excellent/docker-build-push@v5
-        name: Build & push Docker image
-        with:
+      name: Build & push Docker image
+      with:
           image: citykarad/spring-github-actions
           tags: latest
           registry: docker.io
